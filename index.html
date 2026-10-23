@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#3498db] min-h-screen flex justify-center items-center m-0 p-0">
+
+    <!-- Main Password Box -->
+    <div class="min-w-[400px] p-4 shadow-lg bg-[#2980b9] rounded-md">
+        
+        <!-- Where the password shows up -->
+        <span id="password-display" class="w-full block bg-white text-3xl p-3 rounded text-black mb-4">
+            Testing
+        </span>
+        
+        <!-- Password Length Input -->
+        <div class="flex justify-between items-center text-white text-xl mb-3">
+            <div>Password Length</div>
+            <input type="number" id="password-length" max="30" min="2" value="10" class="outline-none text-black w-16 px-2 py-1 rounded" />
+        </div>
+        
+        <!-- Uppercase Checkbox -->
+        <div class="flex justify-between text-white text-xl mb-3">
+            <label class="w-full flex justify-between items-center cursor-pointer select-none">
+                <div>Contains Uppercase</div>
+                <input type="checkbox" id="uppercase-checkbox" checked class="w-5 h-5 cursor-pointer"/>
+            </label>
+        </div>
+        
+        <!-- Lowercase Checkbox -->
+        <div class="flex justify-between text-white text-xl mb-3">
+            <label class="w-full flex justify-between items-center cursor-pointer select-none">
+                <div>Contains Lowercase</div>
+                <input type="checkbox" id="lowercase-checkbox" class="w-5 h-5 cursor-pointer"/>
+            </label>
+        </div>
+        
+        <!-- Numbers Checkbox -->
+        <div class="flex justify-between text-white text-xl mb-3">
+            <label class="w-full flex justify-between items-center cursor-pointer select-none">
+                <div>Contains Numbers</div>
+                <input type="checkbox" id="numbers-checkbox" class="w-5 h-5 cursor-pointer"/>
+            </label>
+        </div>
+        
+        <!-- Symbols Checkbox -->
+        <div class="flex justify-between text-white text-xl mb-3">
+            <label class="w-full flex justify-between items-center cursor-pointer select-none">
+                <div>Contains Symbols</div>
+                <input type="checkbox" id="symbols-checkbox" class="w-5 h-5 cursor-pointer"/>
+            </label>
+        </div>
+        
+        <!-- Generate Button -->
+        <button id="generate-button" class="w-full text-xl p-3 bg-[#34495e] hover:bg-[#2c3e50] text-white mt-2 rounded font-bold transition-colors">
+            Generate Password
+        </button>
+        
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
